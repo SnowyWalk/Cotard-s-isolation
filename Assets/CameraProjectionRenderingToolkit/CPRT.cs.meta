@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 2dfefcdf681c7064dbc706c822b5c9a1
+timeCreated: 1504271746
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - targetTexture: {instanceID: 0}
+  - shaderOverSampling: {fileID: 4800000, guid: 3a23ee0b3d58aae46826bb2e22ea14c7,
+      type: 3}
+  - shaderStereoShapeProj: {fileID: 4800000, guid: 99a35421d3bedaf42bb9871c77b8d6fa,
+      type: 3}
+  - shaderUnityFishEye: {fileID: 4800000, guid: b802320095d7b8f4dad6142b36df90ff,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
