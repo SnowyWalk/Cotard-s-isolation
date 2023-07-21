@@ -50,7 +50,7 @@ Material:
     - Color_Tint: 0
     - Distorsion: 0
     - Dithering: 0
-    - Glitch: 1
+    - Glitch: 0
     - HSV_Desaturate_Selected: 1
     - HSV_Selection: 0
     - HSV_Transform: 0
