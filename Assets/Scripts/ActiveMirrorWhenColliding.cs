@@ -9,9 +9,11 @@ using VRC.Udon;
 public class ActiveMirrorWhenColliding : UdonSharpBehaviour
 {
     private MeshRenderer mirrorRenderer;
-    public PostProcessVolume postprocesser;
     public AudioSource heartbeatSound;
     public AudioSource horrorSound;
+    public PostProcessVolume postprocesser;
+    public GameObject normalPostProcesser;
+    public GameObject redBloomPostProcesser;
 
     void Start()
     {
@@ -29,9 +31,10 @@ public class ActiveMirrorWhenColliding : UdonSharpBehaviour
 
         // Enable the mirror
         mirrorRenderer.enabled = true;
-        postprocesser.enabled = true;
         heartbeatSound.pitch = 1.5f;
         horrorSound.enabled = true;
+        normalPostProcesser.SetActive(false);
+        redBloomPostProcesser.SetActive(true);
     }
 
     public override void OnPlayerTriggerExit(VRCPlayerApi player)
@@ -44,8 +47,9 @@ public class ActiveMirrorWhenColliding : UdonSharpBehaviour
 
         // Enable the mirror
         mirrorRenderer.enabled = false;
-        postprocesser.enabled = false;
         heartbeatSound.pitch = 1f;
+        normalPostProcesser.SetActive(true);
+        redBloomPostProcesser.SetActive(false);
     }
 
 }
