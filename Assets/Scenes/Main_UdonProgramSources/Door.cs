@@ -6,8 +6,12 @@ using VRC.Udon;
 
 public class Door : UdonSharpBehaviour
 {
-    void Start()
+    public AudioSource sound;
+
+    public override void Interact()
     {
-        
+        base.Interact();
+
+        sound.Play();
     }
 }
